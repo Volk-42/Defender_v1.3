@@ -39,13 +39,13 @@ public class TitleScene extends Scene {
                     startGame = false;
                     highScores = true;
                     cursor.set_yPos(71);
-                    System.out.println("cursor yPos: " + cursor.get_yPos());
+                    //System.out.println("cursor yPos: " + cursor.get_yPos());
                     break;
             case KeyEvent.VK_UP:
                     startGame = true;
                     highScores = false;
                     cursor.set_yPos(61);
-                    System.out.println("cursor yPos: " + cursor.get_yPos());
+                    //System.out.println("cursor yPos: " + cursor.get_yPos());
                     break;
             case KeyEvent.VK_RIGHT:
                     System.out.println(" Title scene right key pressed");

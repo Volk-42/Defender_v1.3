@@ -5,7 +5,8 @@ import java.awt.Color;
 public class Cursor extends SceneObject {
     
     public Cursor(int x, int y) {
-        super(Sprite.getSprite("cursor"), x, y);
+        //super(Sprite.getSprite("cursor"), x, y);
+        super("sprite.csv", x, y);
         setColor(ColorPalette.B2);
     }
     public boolean moved() {

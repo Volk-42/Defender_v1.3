@@ -5,7 +5,7 @@ import java.awt.Color;
 public class Building extends SceneObject {
     
     public Building(int x, int y) {
-        super(Sprite.getSprite("building"), x, y);
+        super("sprite.csv", x, y);
         setColor(ColorPalette.B3_1);
     }
     public boolean moved() {

@@ -29,7 +29,7 @@ public class SceneManager implements Runnable {
         System.out.println("col created: " +col);
         row = (int)(10*(Math.round(height/10)))/pixelation;
         System.out.println("row created: " +row);
-        activeScene = new TitleScene();
+        activeScene = new TestSceneDelete();
         System.out.println("sceneManager sets activeScene to new TitleScene");
         defenderPanel = new GamePanel(width, height, col, row);
         defenderScreen = new GameScreen(width, height, defenderPanel);

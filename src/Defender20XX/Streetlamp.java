@@ -5,7 +5,7 @@ import java.awt.Color;
 public class Streetlamp extends SceneObject {
     
     public Streetlamp(int x, int y) {
-        super(Sprite.getSprite("streetlamp"), x, y);
+        super("sprite.csv", x, y);
         setColor(ColorPalette.B3);
     }
     public boolean moved() {

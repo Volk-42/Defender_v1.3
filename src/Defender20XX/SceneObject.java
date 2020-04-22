@@ -2,6 +2,8 @@
 package Defender20XX;
 
 import java.awt.Color;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 public abstract class SceneObject {
@@ -28,8 +30,8 @@ public abstract class SceneObject {
     private boolean active;
     
     //constructor for non-animated Sprites
-    SceneObject(int[][] spriteGrid, int x, int y) {
-        this.spriteGrid = spriteGrid;
+    SceneObject(String fileName, int x, int y) {
+        spriteGrid = new SpriteLoader(fileName).getSprite();
         xPos = x;
         yPos = y;
         oldX = x;
@@ -167,6 +169,7 @@ public abstract class SceneObject {
         }
         spriteChange = true;
     }
+    
     
     public void set_xPos(int xPos) {
         this.xPos = xPos;

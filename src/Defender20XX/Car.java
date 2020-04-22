@@ -5,7 +5,7 @@ import java.awt.Color;
 public class Car extends SceneObject {
     
     Car(int x, int y) {
-        super(Sprite.getSprite("car"), x, y);
+        super("sprite.csv", x, y);
         setColor(Color.BLUE);
     }
     public boolean moved() {

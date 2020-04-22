@@ -10,7 +10,7 @@ public class ShipGuns extends SceneObject {
     private Random r;
    
     public ShipGuns(Ship ship, int x, int y) {
-        super(Sprite.getShot1(), x, y);
+        super("sprite.csv", x, y);
         set_zDepth(1);
         this.setVisible(false);
         setColor(ColorPalette.B1);
